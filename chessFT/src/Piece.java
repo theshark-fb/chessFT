@@ -4,13 +4,15 @@ public class Piece {
 	int m_positionX;
 	int m_positionY;
 	String m_couleur;
+	String m_libelle;
 	
 	public Piece(){
 		
 	}
 	
-	public Piece(String p_couleur){
+	public Piece(String p_couleur, String p_libelle){
 		this.m_couleur = p_couleur;
+		this.m_libelle = p_libelle;
 	}
 	
 	public int getPositionX(){
