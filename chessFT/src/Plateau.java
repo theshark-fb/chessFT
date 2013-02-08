@@ -4,6 +4,9 @@ import javax.swing.JPanel;
 
 public class Plateau  extends JPanel{
 	
+	private String[] m_mouvements;
+	private int m_tourDeJeu = 1;
+	
 	public Plateau(){
 		
 	}
@@ -24,7 +27,23 @@ public class Plateau  extends JPanel{
 				k++;
 			}
 		}
-	  }               
+	}
+	
+	/*public Case getCase(int p_positionX, int p_positionY){
+		
+	}*/
+	
+	/*public boolean echec(){
+		
+	}*/
+	
+	/*public boolean mat(){
+		
+	}*/
+	
+	/*public boolean pat(){
+		
+	}*/
 	
 	/**
 	 * @param args

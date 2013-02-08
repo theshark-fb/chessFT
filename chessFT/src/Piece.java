@@ -1,10 +1,10 @@
 
 public class Piece {
 	
-	int m_positionX;
-	int m_positionY;
-	String m_couleur;
-	String m_libelle;
+	protected int m_positionX;
+	protected int m_positionY;
+	protected String m_couleur;
+	protected String m_libelle;
 	
 	public Piece(){
 		
@@ -18,13 +18,25 @@ public class Piece {
 		return this.m_positionX;
 	}
 	
+	public void setPositionX(int p_positionX){
+		this.m_positionX = p_positionX;
+	}
+	
 	public int getPositionY(){
 		return this.m_positionY;
+	}
+	
+	public void setPositionY(int p_positionY){
+		this.m_positionY = p_positionY;
 	}
 	
 	public String getCouleur(){
 		return this.m_couleur;
 	}
+	
+	/*public Case[] destinations(){
+		
+	}*/
 
 	/**
 	 * @param args
