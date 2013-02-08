@@ -1,5 +1,5 @@
 
-public class Pion extends Piece {
+public class Tour extends Piece {
 
 	/**
 	 * @param args

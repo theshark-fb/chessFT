@@ -1,5 +1,5 @@
 
-public class Reine {
+public class Reine extends Piece {
 
 	/**
 	 * @param args

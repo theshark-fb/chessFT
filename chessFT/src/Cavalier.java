@@ -1,5 +1,5 @@
 
-public class Cavalier {
+public class Cavalier extends Piece {
 
 	/**
 	 * @param args
