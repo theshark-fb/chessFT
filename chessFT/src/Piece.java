@@ -10,9 +10,8 @@ public class Piece {
 		
 	}
 	
-	public Piece(String p_couleur, String p_libelle){
+	public Piece(String p_couleur){
 		this.m_couleur = p_couleur;
-		this.m_libelle = p_libelle;
 	}
 	
 	public int getPositionX(){

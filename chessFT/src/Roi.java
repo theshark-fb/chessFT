@@ -1,5 +1,14 @@
 
 public class Roi extends Piece {
+	
+	public Roi(){
+		super();
+	}
+	
+	public Roi(String p_couleur){
+		super(p_couleur);
+		m_libelle = "Roi";
+	}
 
 	/**
 	 * @param args

@@ -1,5 +1,14 @@
 
 public class Fou extends Piece {
+	
+	public Fou(){
+		super();
+	}
+	
+	public Fou(String p_couleur){
+		super(p_couleur);
+		m_libelle = "Fou";
+	}
 
 	/**
 	 * @param args

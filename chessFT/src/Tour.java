@@ -1,5 +1,14 @@
 
 public class Tour extends Piece {
+	
+	public Tour(){
+		super();
+	}
+	
+	public Tour(String p_couleur){
+		super(p_couleur);
+		m_libelle = "Tour";
+	}
 
 	/**
 	 * @param args
