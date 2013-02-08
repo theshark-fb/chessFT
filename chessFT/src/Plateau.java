@@ -15,7 +15,7 @@ public class Plateau  extends JPanel{
 		for(int i=0;i<400;i+=50){
 			for(int j=0;j<400;j+=50){
 				int res = i/50 + j/50;
-				if(res%2 == 0)
+				if(res%2 == 1)
 					g.setColor(Color.DARK_GRAY);
 				else {
 					g.setColor(Color.LIGHT_GRAY);
