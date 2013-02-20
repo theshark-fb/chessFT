@@ -15,7 +15,7 @@ public class Pion extends Piece {
 		return this.m_premierDeplacement;
 	}
 	
-	public void promotion(){
+	public void promotion(){ // Demande en quoi le pion doit être promu
 		
 	}
 	
