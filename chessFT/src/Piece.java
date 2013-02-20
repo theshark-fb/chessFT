@@ -18,6 +18,11 @@ public abstract class Piece {
 		return this.m_positionX;
 	}
 	
+	public String getLibelle()
+	{
+		return this.m_libelle;
+	}
+	
 	public void setPositionX(int p_positionX){
 		this.m_positionX = p_positionX;
 	}

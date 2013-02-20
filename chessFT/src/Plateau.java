@@ -4,7 +4,7 @@ import javax.swing.JPanel;
 
 public class Plateau extends JPanel{
 	
-	private String[] m_mouvements;
+	private Historique m_mouvements;
 	private int m_tourDeJeu = 1;
 	public static Case[][] m_plateau;
 	
@@ -71,13 +71,33 @@ public class Plateau extends JPanel{
 		return Plateau.m_plateau[p_positionX - 1][p_positionY - 1];
 	}
 	
-	/*public boolean echec(){
+	public void deplacer(Piece p_piece, int p_destinationX, int p_destinationY)
+	{
+		int origineX = p_piece.getPositionX(), origineY = p_piece.getPositionY();
+		// Début initialisation historique
+		String histo = m_mouvements.prepareMouvement(p_piece, p_destinationX, p_destinationY); 
+		// Fin initialisation historique
 		
-	}*/
+		p_piece.setPositionX(p_destinationX);
+		p_piece.setPositionY(p_destinationY);
+		if(p_piece.getLibelle() == "Pion") p_piece.setPremierDeplacement();
+		
+		Plateau.getCase(p_destinationX, p_destinationY).setPiece(p_piece);
+		
+		Plateau.getCase(origineX, origineY).supprimerPiece();
+		
+		m_mouvements.addMouvement(histo);
+		
+		if(!Plateau.mat()) this.m_tourDeJeu++;
+	}
 	
-	/*public boolean mat(){
-		
-	}*/
+	public static boolean echec(){
+		return false;
+	}
+	
+	public static boolean mat(){
+		return false;
+	}
 	
 	/*public boolean pat(){
 		
