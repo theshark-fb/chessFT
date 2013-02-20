@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{BA279F05-FCC2-4CCD-B310-9DA86EB81D37}" Label="" LastModificationDate="1360335846" Name="chessFT" Objects="2" Symbols="0" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" signature="PRJ_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{BA279F05-FCC2-4CCD-B310-9DA86EB81D37}" Label="" LastModificationDate="1360336268" Name="chessFT" Objects="3" Symbols="0" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" signature="PRJ_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -449,6 +449,21 @@ Shadow=0</a:DisplayPreferences>
 <c:DefaultDiagram>
 <o:ProjectDiagram Ref="o3"/>
 </c:DefaultDiagram>
+<c:ModelsAndFiles>
+<o:ModelDocument Id="o4">
+<a:ObjectID>48005BC9-699D-4EE5-8C9C-8941598E183A</a:ObjectID>
+<a:Name>Diagramme de classes</a:Name>
+<a:Code>Diagramme_de_classes</a:Code>
+<a:CreationDate>1360335933</a:CreationDate>
+<a:Creator>Nilmanduil</a:Creator>
+<a:ModificationDate>1360340911</a:ModificationDate>
+<a:Modifier>Nilmanduil</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/Diagramme de classes.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>1AF99237-1304-469F-BC5D-4779722773D7</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+</c:ModelsAndFiles>
 </o:Project>
 </c:Children>
 </o:RootObject>

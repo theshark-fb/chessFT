@@ -1,10 +1,17 @@
 
 public class Case {
 	
-	int m_positionX;
-	int m_positionY;
-	Piece m_piece = null;
-	String m_surlignee;
+	private int m_positionX;
+	private int m_positionY;
+	private Piece m_piece = null;
+	private String m_surlignee;
+	
+	public Case(int p_positionX, int p_positionY){
+		this.m_positionX = p_positionX;
+		this.m_positionY = p_positionY;
+		this.m_surlignee = "";
+		this.m_piece = null;
+	}
 	
 	public int getPositionX(){
 		return this.m_positionX;
@@ -29,6 +36,10 @@ public class Case {
 	public void setPiece(Piece p_piece){
 		this.m_piece = p_piece;
 	}
+	
+	public void supprimerPiece(){
+		this.m_piece = null;
+	}
 
 	/**
 	 * @param args
@@ -37,5 +48,4 @@ public class Case {
 		// TODO Auto-generated method stub
 
 	}
-
 }
