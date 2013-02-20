@@ -2,20 +2,21 @@ import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
-public class Plateau  extends JPanel{
+public class Plateau extends JPanel{
 	
 	private String[] m_mouvements;
 	private int m_tourDeJeu = 1;
-	private static Case[][] m_plateau;
+	public static Case[][] m_plateau;
 	
 	public Plateau(){
 		int x, y;
+		Plateau.m_plateau = new Case[8][8];
 		
 		for(x = 0; x < 8; x++)
 		{
 			for(y = 0; y < 8; y++)
 			{
-				this.m_plateau[x][y] = new Case(x+1, y+1);
+				Plateau.m_plateau[x][y] = new Case(x+1, y+1);
 			}
 		}
 		
@@ -67,7 +68,7 @@ public class Plateau  extends JPanel{
 	}
 	
 	public static Case getCase(int p_positionX, int p_positionY){
-		return Plateau.m_plateau[p_positionX-1][p_positionY-1];
+		return Plateau.m_plateau[p_positionX - 1][p_positionY - 1];
 	}
 	
 	/*public boolean echec(){
