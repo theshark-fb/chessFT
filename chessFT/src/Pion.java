@@ -25,9 +25,9 @@ public class Pion extends Piece {
 		int pos_x = this.m_positionX;
 		int pos_y = this.m_positionY;
 		if(this.m_couleur == "blanche")
-			pos_y -= 1;
-		else
 			pos_y += 1;
+		else
+			pos_y -= 1;
 		if(pos_y>0 && pos_y<7){
 			if(Plateau.getCase(pos_x, pos_y).getPiece() == null){
 				cases[i] = Plateau.getCase(pos_x, pos_y);
