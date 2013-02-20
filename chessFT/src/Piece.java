@@ -1,5 +1,5 @@
 
-public class Piece {
+public abstract class Piece {
 	
 	protected int m_positionX;
 	protected int m_positionY;
@@ -34,9 +34,7 @@ public class Piece {
 		return this.m_couleur;
 	}
 	
-	/*public Case[] destinations(){
-		
-	}*/
+	public abstract Case[] destinations();
 
 	/**
 	 * @param args

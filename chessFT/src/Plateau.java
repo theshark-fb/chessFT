@@ -6,6 +6,7 @@ public class Plateau  extends JPanel{
 	
 	private String[] m_mouvements;
 	private int m_tourDeJeu = 1;
+	private static Case[][] m_plateau;
 	
 	public Plateau(){
 		
@@ -29,9 +30,9 @@ public class Plateau  extends JPanel{
 		}
 	}
 	
-	/*public Case getCase(int p_positionX, int p_positionY){
-		
-	}*/
+	public static Case getCase(int p_positionX, int p_positionY){
+		return m_plateau[p_positionX-1][p_positionY-1];
+	}
 	
 	/*public boolean echec(){
 		

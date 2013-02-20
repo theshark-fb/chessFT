@@ -14,6 +14,13 @@ public class Roi extends Piece {
 		return this.m_roque;
 	}
 	
+	public Case[] destinations(){
+		int i = 0;
+		Case[] cases = new Case[8];
+		
+		return cases;
+	}
+	
 	/**
 	 * @param args
 	 */

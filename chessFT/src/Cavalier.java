@@ -8,6 +8,13 @@ public class Cavalier extends Piece {
 		this.m_positionY = p_positionY;
 	}
 	
+	public Case[] destinations(){
+		int i = 0;
+		Case[] cases = new Case[13];
+		
+		return cases;
+	}
+	
 	/**
 	 * @param args
 	 */
