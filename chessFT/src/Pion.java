@@ -47,6 +47,7 @@ public class Pion extends Piece {
 			}
 			if(m_premierDeplacement && Plateau.getCase(pos_x, pos_y) == null){
 				cases[i] = Plateau.getCase(pos_x, pos_y+pos_y);
+				i++;
 			}
 		}
 		return cases;
