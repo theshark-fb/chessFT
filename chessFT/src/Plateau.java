@@ -71,13 +71,62 @@ public class Plateau extends JPanel{
 		return Plateau.m_plateau[p_positionX - 1][p_positionY - 1];
 	}
 	
-	/*public boolean echec(){
+	public void deplacer(Piece p_piece, int p_destinationX, int p_destinationY)
+	{
+		int origineX = p_piece.getPositionX(), origineY = p_piece.getPositionY();
+		// Début initialisation historique
+		String histo;
+		boolean occupee = Plateau.getCase(p_destinationX, p_destinationY).occupee();
 		
-	}*/
+		String caractereDepart =  Integer.toString('a'-1+origineX);
+		String caractereArrivee =  Integer.toString('a'-1+p_destinationX);
+		histo = caractereDepart+Integer.toString(origineY)+"-"+caractereArrivee+Integer.toString(p_destinationY);
+		
+		if(p_piece.getLibelle() == "Roi")
+		{
+			histo = "R"+histo;
+		}
+		else if(p_piece.getLibelle() == "Reine")
+		{
+			histo = "D"+histo;
+		}
+		else if(p_piece.getLibelle() == "Tour")
+		{
+			histo = "T"+histo;
+		}
+		else if(p_piece.getLibelle() == "Fou")
+		{
+			histo = "F"+histo;
+		}
+		else if(p_piece.getLibelle() == "Cavalier")
+		{
+			histo = "C"+histo;
+		}
+		// Fin initialisation historique
+		
+		p_piece.setPositionX(p_destinationX);
+		p_piece.setPositionY(p_destinationY);
+		if(p_piece.getLibelle() == "Pion") p_piece.setPremierDeplacement();
+		
+		Plateau.getCase(p_destinationX, p_destinationY).setPiece(p_piece);
+		
+		Plateau.getCase(origineX, origineY).supprimerPiece();
+		
+		if(occupee) histo += "x";
+		if(this.echec()) histo += "+";
+		if(this.mat()) histo += "+";
+		this.m_mouvements[this.m_mouvements.length] = histo;
+		
+		if(!this.mat()) this.m_tourDeJeu++;
+	}
 	
-	/*public boolean mat(){
-		
-	}*/
+	public boolean echec(){
+		return false;
+	}
+	
+	public boolean mat(){
+		return false;
+	}
 	
 	/*public boolean pat(){
 		
