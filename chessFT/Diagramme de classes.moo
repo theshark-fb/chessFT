@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{1AF99237-1304-469F-BC5D-4779722773D7}" Label="" LastModificationDate="1360340073" Name="Diagramme de classes" Objects="83" Symbols="22" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{1AF99237-1304-469F-BC5D-4779722773D7}" Label="" LastModificationDate="1361374571" Name="Diagramme de classes" Objects="86" Symbols="21" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>Diagramme_de_classes</a:Code>
 <a:CreationDate>1360335933</a:CreationDate>
 <a:Creator>Nilmanduil</a:Creator>
-<a:ModificationDate>1360338720</a:ModificationDate>
+<a:ModificationDate>1361374416</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -2073,7 +2073,7 @@ NameToCode=No</a:ModelOptionsText>
 <a:Code>chessFT</a:Code>
 <a:CreationDate>1360335933</a:CreationDate>
 <a:Creator>Nilmanduil</a:Creator>
-<a:ModificationDate>1360336904</a:ModificationDate>
+<a:ModificationDate>1361374416</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -2588,8 +2588,8 @@ Shadow=0</a:DisplayPreferences>
 <o:AssociationSymbol Id="o22">
 <a:CreationDate>1360336197</a:CreationDate>
 <a:ModificationDate>1360338458</a:ModificationDate>
-<a:Rect>((-13767,34186), (-9719,45225))</a:Rect>
-<a:ListOfPoints>((-11743,34186),(-11743,45225))</a:ListOfPoints>
+<a:Rect>((-13767,33766), (-9719,45225))</a:Rect>
+<a:ListOfPoints>((-11743,33766),(-11743,45225))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>2048</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -2629,8 +2629,8 @@ MULA 0 Arial,8,N</a:FontList>
 <o:AssociationSymbol Id="o29">
 <a:CreationDate>1360336904</a:CreationDate>
 <a:ModificationDate>1360337562</a:ModificationDate>
-<a:Rect>((-9902,29713), (6749,32061))</a:Rect>
-<a:ListOfPoints>((-9902,30887),(6749,30887))</a:ListOfPoints>
+<a:Rect>((-9902,29724), (6749,32072))</a:Rect>
+<a:ListOfPoints>((-9902,30898),(6749,30898))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -2668,6 +2668,27 @@ MULA 0 Arial,8,N</a:FontList>
 <o:Association Ref="o33"/>
 </c:Object>
 </o:AssociationSymbol>
+<o:AssociationSymbol Id="o34">
+<a:CreationDate>1361374416</a:CreationDate>
+<a:ModificationDate>1361374544</a:ModificationDate>
+<a:Rect>((-10575,34726), (-249,43945))</a:Rect>
+<a:ListOfPoints>((-2273,43945),(-2273,34726),(-10575,34726))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>2048</a:ArrowStyle>
+<a:LineColor>16744448</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+MULA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:ClassSymbol Ref="o35"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:ClassSymbol Ref="o23"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Association Ref="o36"/>
+</c:Object>
+</o:AssociationSymbol>
 <o:ClassSymbol Id="o24">
 <a:CreationDate>1360335972</a:CreationDate>
 <a:ModificationDate>1360338720</a:ModificationDate>
@@ -2688,14 +2709,14 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o34"/>
+<o:Class Ref="o37"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o23">
 <a:CreationDate>1360335974</a:CreationDate>
 <a:ModificationDate>1360338720</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-23532,23785), (-4970,38317))</a:Rect>
+<a:Rect>((-23532,24758), (-4970,37344))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -2711,7 +2732,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o35"/>
+<o:Class Ref="o38"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o8">
@@ -2734,7 +2755,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o27">
@@ -2757,7 +2778,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o37"/>
+<o:Class Ref="o40"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o7">
@@ -2780,7 +2801,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o38"/>
+<o:Class Ref="o41"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o11">
@@ -2803,7 +2824,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o39"/>
+<o:Class Ref="o42"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o14">
@@ -2826,7 +2847,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o40"/>
+<o:Class Ref="o43"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o17">
@@ -2849,7 +2870,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o41"/>
+<o:Class Ref="o44"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o20">
@@ -2872,7 +2893,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o42"/>
+<o:Class Ref="o45"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o30">
@@ -2895,7 +2916,30 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o43"/>
+<o:Class Ref="o46"/>
+</c:Object>
+</o:ClassSymbol>
+<o:ClassSymbol Id="o35">
+<a:CreationDate>1361374336</a:CreationDate>
+<a:ModificationDate>1361374409</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-7081,43932), (11019,49699))</a:Rect>
+<a:LineColor>16744448</a:LineColor>
+<a:FillColor>16770222</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+CNTR 0 Arial,8,N
+Attributes 0 Arial,8,N
+ClassPrimaryAttribute 0 Arial,8,U
+Operations 0 Arial,8,N
+InnerClassifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Class Ref="o47"/>
 </c:Object>
 </o:ClassSymbol>
 </c:Symbols>
@@ -2905,7 +2949,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ClassDiagram Ref="o5"/>
 </c:DefaultDiagram>
 <c:Classes>
-<o:Class Id="o34">
+<o:Class Id="o37">
 <a:ObjectID>B3C8CE93-5F91-4745-967B-5144BA3C21F8</a:ObjectID>
 <a:Name>Fenêtre</a:Name>
 <a:Code>Fenetre</a:Code>
@@ -2915,17 +2959,17 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 </o:Class>
-<o:Class Id="o35">
+<o:Class Id="o38">
 <a:ObjectID>C898EED2-2B26-470E-AA11-6B8A703201B4</a:ObjectID>
 <a:Name>Plateau</a:Name>
 <a:Code>Plateau</a:Code>
 <a:CreationDate>1360335974</a:CreationDate>
 <a:Creator>Nilmanduil</a:Creator>
-<a:ModificationDate>1360338817</a:ModificationDate>
+<a:ModificationDate>1361374571</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o44">
+<o:Attribute Id="o48">
 <a:ObjectID>79FEDE6B-F03F-4E1B-ABCC-5EABA03EE991</a:ObjectID>
 <a:Name>m_mouvements</a:Name>
 <a:Code>m_mouvements</a:Code>
@@ -2937,7 +2981,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:Multiplicity>*</a:Multiplicity>
 </o:Attribute>
-<o:Attribute Id="o45">
+<o:Attribute Id="o49">
 <a:ObjectID>2ED81B42-ECA0-4BA5-B5B9-DEB118989CF3</a:ObjectID>
 <a:Name>m_tourDeJeu</a:Name>
 <a:Code>m_tourDeJeu</a:Code>
@@ -2951,7 +2995,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o46">
+<o:Operation Id="o50">
 <a:ObjectID>4F10A36E-8A06-4A72-90DE-36ABF4B3586E</a:ObjectID>
 <a:Name>getCase</a:Name>
 <a:Code>getCase</a:Code>
@@ -2962,10 +3006,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>Case</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:ObjectReturnType>
-<o:Class Ref="o43"/>
+<o:Class Ref="o46"/>
 </c:ObjectReturnType>
 <c:Parameters>
-<o:Parameter Id="o47">
+<o:Parameter Id="o51">
 <a:ObjectID>164C7F78-B4BB-4834-9DD0-C8F65BD9271F</a:ObjectID>
 <a:Name>p_positionX</a:Name>
 <a:Code>p_positionX</a:Code>
@@ -2976,7 +3020,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Parameter.DataType>int</a:Parameter.DataType>
 <a:ParameterType>I</a:ParameterType>
 </o:Parameter>
-<o:Parameter Id="o48">
+<o:Parameter Id="o52">
 <a:ObjectID>AD294A51-F068-4E3B-9BA4-8636053FCF8B</a:ObjectID>
 <a:Name>p_positionY</a:Name>
 <a:Code>p_positionY</a:Code>
@@ -2989,7 +3033,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Parameter>
 </c:Parameters>
 </o:Operation>
-<o:Operation Id="o49">
+<o:Operation Id="o53">
 <a:ObjectID>6D68D5DB-B940-45D6-A8D1-D779195A2B1D</a:ObjectID>
 <a:Name>getMouvements</a:Name>
 <a:Code>getMouvements</a:Code>
@@ -3000,28 +3044,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>String[]</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o50">
-<a:ObjectID>37C2DC17-0768-4C82-91C5-FC805C83103E</a:ObjectID>
-<a:Name>addMouvement</a:Name>
-<a:Code>addMouvement</a:Code>
-<a:CreationDate>1360337973</a:CreationDate>
-<a:Creator>Nilmanduil</a:Creator>
-<a:ModificationDate>1360338006</a:ModificationDate>
-<a:Modifier>Nilmanduil</a:Modifier>
-<a:ReturnType>String</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-<o:Operation Id="o51">
-<a:ObjectID>DD404F34-0CA6-4146-95C6-91204DE710A2</a:ObjectID>
-<a:Name>annulerMouvement</a:Name>
-<a:Code>annulerMouvement</a:Code>
-<a:CreationDate>1360338788</a:CreationDate>
-<a:Creator>Nilmanduil</a:Creator>
-<a:ModificationDate>1360338817</a:ModificationDate>
-<a:Modifier>Nilmanduil</a:Modifier>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-<o:Operation Id="o52">
+<o:Operation Id="o54">
 <a:ObjectID>98288BD6-8B6E-47B4-A447-25FD4EFB48EA</a:ObjectID>
 <a:Name>echec</a:Name>
 <a:Code>echec</a:Code>
@@ -3032,7 +3055,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>boolean</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o53">
+<o:Operation Id="o55">
 <a:ObjectID>E1F711C3-6785-4966-B804-E3CB024666F9</a:ObjectID>
 <a:Name>mat</a:Name>
 <a:Code>mat</a:Code>
@@ -3043,7 +3066,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>boolean</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o54">
+<o:Operation Id="o56">
 <a:ObjectID>00F867A0-D08B-466E-B4C1-B09B1A948396</a:ObjectID>
 <a:Name>pat</a:Name>
 <a:Code>pat</a:Code>
@@ -3054,7 +3077,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>boolean</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o55">
+<o:Operation Id="o57">
 <a:ObjectID>1106114D-74F6-45E7-AD4C-D6669F47C93A</a:ObjectID>
 <a:Name>nouvellePartie</a:Name>
 <a:Code>nouvellePartie</a:Code>
@@ -3064,7 +3087,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o56">
+<o:Operation Id="o58">
 <a:ObjectID>E77740AB-B44B-4E5A-BC6A-A3F71EB9E9F3</a:ObjectID>
 <a:Name>sauverPartie</a:Name>
 <a:Code>sauverPartie</a:Code>
@@ -3075,7 +3098,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>int</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o57">
+<o:Parameter Id="o59">
 <a:ObjectID>696D08FA-3168-4C71-8F14-FCE786D9AF37</a:ObjectID>
 <a:Name>emplacement</a:Name>
 <a:Code>emplacement</a:Code>
@@ -3088,7 +3111,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Parameter>
 </c:Parameters>
 </o:Operation>
-<o:Operation Id="o58">
+<o:Operation Id="o60">
 <a:ObjectID>22F5160B-61FF-4F12-8007-FC2251CE4C70</a:ObjectID>
 <a:Name>chargerPartie</a:Name>
 <a:Code>chargerPartie</a:Code>
@@ -3099,7 +3122,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>int</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o59">
+<o:Parameter Id="o61">
 <a:ObjectID>297A39E4-C134-42B1-9E46-89D0E45D09D3</a:ObjectID>
 <a:Name>emplacement</a:Name>
 <a:Code>emplacement</a:Code>
@@ -3113,17 +3136,17 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o36">
+<o:Class Id="o39">
 <a:ObjectID>8467F2FF-BF87-41A3-B1C3-7BDE980E39E7</a:ObjectID>
 <a:Name>Piece</a:Name>
 <a:Code>Piece</a:Code>
 <a:CreationDate>1360335980</a:CreationDate>
 <a:Creator>Nilmanduil</a:Creator>
-<a:ModificationDate>1360339780</a:ModificationDate>
+<a:ModificationDate>1361374539</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o60">
+<o:Attribute Id="o62">
 <a:ObjectID>9006B6E0-081A-495F-AF63-ADB105289E09</a:ObjectID>
 <a:Name>m_couleur</a:Name>
 <a:Code>m_couleur</a:Code>
@@ -3134,7 +3157,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o61">
+<o:Attribute Id="o63">
 <a:ObjectID>1CBDD046-9596-4E9B-9A6D-7BB65F73BD1E</a:ObjectID>
 <a:Name>m_positionX</a:Name>
 <a:Code>m_positionX</a:Code>
@@ -3145,7 +3168,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o62">
+<o:Attribute Id="o64">
 <a:ObjectID>EBE12E3A-0A6A-47DF-B343-AEFD3661F65B</a:ObjectID>
 <a:Name>m_positionY</a:Name>
 <a:Code>m_positionY</a:Code>
@@ -3156,7 +3179,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o63">
+<o:Attribute Id="o65">
 <a:ObjectID>3059CD19-5878-48D0-A25B-482EC37E3828</a:ObjectID>
 <a:Name>m_libelle</a:Name>
 <a:Code>m_libelle</a:Code>
@@ -3169,7 +3192,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o64">
+<o:Operation Id="o66">
 <a:ObjectID>30E9FCB7-0BA9-46A1-AE64-C2EBD554283E</a:ObjectID>
 <a:Name>Piece</a:Name>
 <a:Code>piece</a:Code>
@@ -3179,7 +3202,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o65">
+<o:Parameter Id="o67">
 <a:ObjectID>6BF88569-F91C-4DD1-A6A0-E9E2885C8A5C</a:ObjectID>
 <a:Name>p_positionX</a:Name>
 <a:Code>pPositionX</a:Code>
@@ -3190,7 +3213,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Parameter.DataType>int</a:Parameter.DataType>
 <a:ParameterType>I</a:ParameterType>
 </o:Parameter>
-<o:Parameter Id="o66">
+<o:Parameter Id="o68">
 <a:ObjectID>68240966-B8C5-4DEA-957F-CDB1DCC12CCA</a:ObjectID>
 <a:Name>p_positionY</a:Name>
 <a:Code>pPositionY</a:Code>
@@ -3203,7 +3226,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Parameter>
 </c:Parameters>
 </o:Operation>
-<o:Operation Id="o67">
+<o:Operation Id="o69">
 <a:ObjectID>705D4707-2828-4958-8CF0-C17D07252EE2</a:ObjectID>
 <a:Name>deplacementValide</a:Name>
 <a:Code>deplacementValide</a:Code>
@@ -3214,7 +3237,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>boolean</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o68">
+<o:Parameter Id="o70">
 <a:ObjectID>8C24210B-C969-44EF-A141-CC361E68E78D</a:ObjectID>
 <a:Name>p_destX</a:Name>
 <a:Code>p_destX</a:Code>
@@ -3225,7 +3248,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Parameter.DataType>int</a:Parameter.DataType>
 <a:ParameterType>I</a:ParameterType>
 </o:Parameter>
-<o:Parameter Id="o69">
+<o:Parameter Id="o71">
 <a:ObjectID>C1F86D0E-94DE-4384-A434-C8A35153D27C</a:ObjectID>
 <a:Name>p_destY</a:Name>
 <a:Code>p_destY</a:Code>
@@ -3238,7 +3261,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Parameter>
 </c:Parameters>
 </o:Operation>
-<o:Operation Id="o70">
+<o:Operation Id="o72">
 <a:ObjectID>16477D58-0DA4-44D2-BD5B-A571CB7BABA5</a:ObjectID>
 <a:Name>getCouleur</a:Name>
 <a:Code>getCouleur</a:Code>
@@ -3249,7 +3272,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>String</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o71">
+<o:Operation Id="o73">
 <a:ObjectID>0D11BC61-D044-49F4-920E-0E09B7C5317F</a:ObjectID>
 <a:Name>getPositionX</a:Name>
 <a:Code>getPositionX</a:Code>
@@ -3260,7 +3283,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>int</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o72">
+<o:Operation Id="o74">
 <a:ObjectID>1D560FC9-7815-4A51-87F6-CFEF3F802DD9</a:ObjectID>
 <a:Name>getPositionY</a:Name>
 <a:Code>getPositionY</a:Code>
@@ -3271,7 +3294,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>int</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o73">
+<o:Operation Id="o75">
 <a:ObjectID>D0F7267B-25CB-4175-8F21-C9250453B88C</a:ObjectID>
 <a:Name>destinations</a:Name>
 <a:Code>destinations</a:Code>
@@ -3282,7 +3305,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>Case[]</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o74">
+<o:Operation Id="o76">
 <a:ObjectID>99C9DA0F-9C36-4A96-BD79-3FD62EF6779B</a:ObjectID>
 <a:Name>deplacer</a:Name>
 <a:Code>deplacer</a:Code>
@@ -3292,7 +3315,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o75">
+<o:Parameter Id="o77">
 <a:ObjectID>D760897C-628F-494B-8DAB-2CE2525C51BE</a:ObjectID>
 <a:Name>p_destX</a:Name>
 <a:Code>p_destX</a:Code>
@@ -3303,7 +3326,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Parameter.DataType>int</a:Parameter.DataType>
 <a:ParameterType>I</a:ParameterType>
 </o:Parameter>
-<o:Parameter Id="o76">
+<o:Parameter Id="o78">
 <a:ObjectID>92CE49C1-7BB5-42B9-801B-7280F4413A22</a:ObjectID>
 <a:Name>p_destY</a:Name>
 <a:Code>p_destY</a:Code>
@@ -3318,7 +3341,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o37">
+<o:Class Id="o40">
 <a:ObjectID>889D0FED-BC29-42B1-87DE-0DEA88DBA029</a:ObjectID>
 <a:Name>Roi</a:Name>
 <a:Code>Roi</a:Code>
@@ -3328,7 +3351,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o77">
+<o:Attribute Id="o79">
 <a:ObjectID>AB2B56D3-F7A5-477E-B1B5-48D13762382D</a:ObjectID>
 <a:Name>roque</a:Name>
 <a:Code>roque</a:Code>
@@ -3342,7 +3365,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o78">
+<o:Operation Id="o80">
 <a:ObjectID>6E5933F6-E387-4FB1-9603-1D6709B981B3</a:ObjectID>
 <a:Name>getRoque</a:Name>
 <a:Code>getRoque</a:Code>
@@ -3355,7 +3378,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o38">
+<o:Class Id="o41">
 <a:ObjectID>8A740270-DD55-4398-9837-2D13EE17E69A</a:ObjectID>
 <a:Name>Reine</a:Name>
 <a:Code>Reine</a:Code>
@@ -3365,7 +3388,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 </o:Class>
-<o:Class Id="o39">
+<o:Class Id="o42">
 <a:ObjectID>D269DB3D-4676-4381-AE42-32F12B0E3B5B</a:ObjectID>
 <a:Name>Cavalier</a:Name>
 <a:Code>Cavalier</a:Code>
@@ -3375,7 +3398,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 </o:Class>
-<o:Class Id="o40">
+<o:Class Id="o43">
 <a:ObjectID>9D97C651-741F-431E-8A00-3782C9AEE059</a:ObjectID>
 <a:Name>Tour</a:Name>
 <a:Code>Tour</a:Code>
@@ -3385,7 +3408,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o79">
+<o:Attribute Id="o81">
 <a:ObjectID>F5D1AC2B-8373-402B-9FD2-2819C075DD72</a:ObjectID>
 <a:Name>roque</a:Name>
 <a:Code>roque</a:Code>
@@ -3399,7 +3422,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o80">
+<o:Operation Id="o82">
 <a:ObjectID>84FAF2B7-30A2-456C-9687-04C81E55EB16</a:ObjectID>
 <a:Name>getRoque</a:Name>
 <a:Code>getRoque</a:Code>
@@ -3412,7 +3435,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o41">
+<o:Class Id="o44">
 <a:ObjectID>FB5032E2-67CE-4DE9-ABF0-6C9EDD8F4DD1</a:ObjectID>
 <a:Name>Fou</a:Name>
 <a:Code>Fou</a:Code>
@@ -3422,7 +3445,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 </o:Class>
-<o:Class Id="o42">
+<o:Class Id="o45">
 <a:ObjectID>4AA9E01C-9F6D-4985-AF42-F3DA6C92D0C2</a:ObjectID>
 <a:Name>Pion</a:Name>
 <a:Code>Pion</a:Code>
@@ -3432,7 +3455,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o81">
+<o:Attribute Id="o83">
 <a:ObjectID>5DA764AE-FD3E-4B60-9B11-922C2A05ACC8</a:ObjectID>
 <a:Name>premierDeplacement</a:Name>
 <a:Code>premierDeplacement</a:Code>
@@ -3446,7 +3469,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o82">
+<o:Operation Id="o84">
 <a:ObjectID>477435D8-21C0-4A66-A6A4-89C0BF902E49</a:ObjectID>
 <a:Name>Promotion</a:Name>
 <a:Code>Promotion</a:Code>
@@ -3456,7 +3479,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o83">
+<o:Operation Id="o85">
 <a:ObjectID>B4900839-A3AC-4641-AC85-3EC49E23EF79</a:ObjectID>
 <a:Name>getPremierDeplacement</a:Name>
 <a:Code>getPremierDeplacement</a:Code>
@@ -3469,7 +3492,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o43">
+<o:Class Id="o46">
 <a:ObjectID>11438BDE-FADA-40D5-8E94-52E0045D9E49</a:ObjectID>
 <a:Name>Case</a:Name>
 <a:Code>Case</a:Code>
@@ -3479,7 +3502,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o84">
+<o:Attribute Id="o86">
 <a:ObjectID>AFC05E5E-A7E5-4856-A034-98FB596641CB</a:ObjectID>
 <a:Name>m_surlignee</a:Name>
 <a:Code>m_surlignee</a:Code>
@@ -3491,7 +3514,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>transparent</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o85">
+<o:Attribute Id="o87">
 <a:ObjectID>449C3D52-78BB-4199-B6FF-8A5A34D4C756</a:ObjectID>
 <a:Name>m_positionX</a:Name>
 <a:Code>m_positionX</a:Code>
@@ -3502,7 +3525,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o86">
+<o:Attribute Id="o88">
 <a:ObjectID>F9BAC208-5534-4F6F-8A46-BEA12BF345D9</a:ObjectID>
 <a:Name>m_positionY</a:Name>
 <a:Code>m_positionY</a:Code>
@@ -3515,7 +3538,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o87">
+<o:Operation Id="o89">
 <a:ObjectID>971B5FB2-CF66-4B61-AEFB-FF7264C08E5E</a:ObjectID>
 <a:Name>getPositionX</a:Name>
 <a:Code>getPositionX</a:Code>
@@ -3526,7 +3549,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>int</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o88">
+<o:Operation Id="o90">
 <a:ObjectID>C197F67D-C387-4D12-9701-134455D371B9</a:ObjectID>
 <a:Name>getPositionY</a:Name>
 <a:Code>getPositionY</a:Code>
@@ -3537,7 +3560,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>int</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o89">
+<o:Operation Id="o91">
 <a:ObjectID>D7B8BB7C-EF1F-4F0E-93C6-B0515DE50087</a:ObjectID>
 <a:Name>getSurlignee</a:Name>
 <a:Code>getSurlignee</a:Code>
@@ -3548,7 +3571,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>String</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o90">
+<o:Operation Id="o92">
 <a:ObjectID>27C50D52-6651-45EF-A70B-FFA5DE868B1A</a:ObjectID>
 <a:Name>setSurlignee</a:Name>
 <a:Code>setSurlignee</a:Code>
@@ -3558,7 +3581,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o91">
+<o:Parameter Id="o93">
 <a:ObjectID>033D217B-2C91-4DB3-BE98-8BF7BFA3AABE</a:ObjectID>
 <a:Name>p_surlignee</a:Name>
 <a:Code>pSurlignee</a:Code>
@@ -3571,7 +3594,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Parameter>
 </c:Parameters>
 </o:Operation>
-<o:Operation Id="o92">
+<o:Operation Id="o94">
 <a:ObjectID>972E7ECD-8F9A-4BB0-AD29-F70DAB2F1094</a:ObjectID>
 <a:Name>setPiece</a:Name>
 <a:Code>setPiece</a:Code>
@@ -3581,7 +3604,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o93">
+<o:Parameter Id="o95">
 <a:ObjectID>1994032E-8DFE-472D-ADCF-C2FE51049380</a:ObjectID>
 <a:Name>p_piece</a:Name>
 <a:Code>pPiece</a:Code>
@@ -3592,12 +3615,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Parameter.DataType>Piece</a:Parameter.DataType>
 <a:ParameterType>I</a:ParameterType>
 <c:ObjectDataType>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:ObjectDataType>
 </o:Parameter>
 </c:Parameters>
 </o:Operation>
-<o:Operation Id="o94">
+<o:Operation Id="o96">
 <a:ObjectID>60E71346-2742-4ABB-9BF0-CE25C3406742</a:ObjectID>
 <a:Name>getPiece</a:Name>
 <a:Code>getPiece</a:Code>
@@ -3608,10 +3631,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>Piece</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:ObjectReturnType>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:ObjectReturnType>
 </o:Operation>
-<o:Operation Id="o95">
+<o:Operation Id="o97">
 <a:ObjectID>815AB674-1CEE-44AA-A1B1-7626FF21D999</a:ObjectID>
 <a:Name>supprimerPiece</a:Name>
 <a:Code>supprimerPiece</a:Code>
@@ -3621,7 +3644,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o96">
+<o:Operation Id="o98">
 <a:ObjectID>F94A87AB-B7ED-42A6-9C4F-D83159209C59</a:ObjectID>
 <a:Name>occupee</a:Name>
 <a:Code>occupee</a:Code>
@@ -3630,6 +3653,92 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1360337128</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:ReturnType>boolean</a:ReturnType>
+<a:TemplateBody>%DefaultBody%</a:TemplateBody>
+</o:Operation>
+</c:Operations>
+</o:Class>
+<o:Class Id="o47">
+<a:ObjectID>2180BE95-CC46-42F6-87D7-A3DFA6FBF850</a:ObjectID>
+<a:Name>Historique</a:Name>
+<a:Code>Historique</a:Code>
+<a:CreationDate>1361374336</a:CreationDate>
+<a:Creator>Nilmanduil</a:Creator>
+<a:ModificationDate>1361374465</a:ModificationDate>
+<a:Modifier>Nilmanduil</a:Modifier>
+<a:UseParentNamespace>0</a:UseParentNamespace>
+<c:Attributes>
+<o:Attribute Id="o99">
+<a:ObjectID>825B96B3-7585-48E1-9BB6-698EDBD8E4E0</a:ObjectID>
+<a:Name>m_mouvements</a:Name>
+<a:Code>mMouvements</a:Code>
+<a:CreationDate>1361374338</a:CreationDate>
+<a:Creator>Nilmanduil</a:Creator>
+<a:ModificationDate>1361374405</a:ModificationDate>
+<a:Modifier>Nilmanduil</a:Modifier>
+<a:DataType>String</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+<a:Multiplicity>*</a:Multiplicity>
+</o:Attribute>
+</c:Attributes>
+<c:Operations>
+<o:Operation Id="o100">
+<a:ObjectID>A0021D06-B492-431C-B14F-2AAE749E960C</a:ObjectID>
+<a:Name>addMouvement</a:Name>
+<a:Code>addMouvement</a:Code>
+<a:CreationDate>1361374338</a:CreationDate>
+<a:Creator>Nilmanduil</a:Creator>
+<a:ModificationDate>1361374539</a:ModificationDate>
+<a:Modifier>Nilmanduil</a:Modifier>
+<a:ReturnType>void</a:ReturnType>
+<a:TemplateBody>%DefaultBody%</a:TemplateBody>
+<c:Parameters>
+<o:Parameter Id="o101">
+<a:ObjectID>C96B282F-422B-47F4-9587-DF47883B7C88</a:ObjectID>
+<a:Name>p_piece</a:Name>
+<a:Code>pPiece</a:Code>
+<a:CreationDate>1361374497</a:CreationDate>
+<a:Creator>Nilmanduil</a:Creator>
+<a:ModificationDate>1361374539</a:ModificationDate>
+<a:Modifier>Nilmanduil</a:Modifier>
+<a:Parameter.DataType>Piece</a:Parameter.DataType>
+<a:ParameterType>I</a:ParameterType>
+<c:ObjectDataType>
+<o:Class Ref="o39"/>
+</c:ObjectDataType>
+</o:Parameter>
+<o:Parameter Id="o102">
+<a:ObjectID>F190F609-F9DC-481B-89A9-22B5389C2BE8</a:ObjectID>
+<a:Name>p_destinationX</a:Name>
+<a:Code>pDestinationX</a:Code>
+<a:CreationDate>1361374497</a:CreationDate>
+<a:Creator>Nilmanduil</a:Creator>
+<a:ModificationDate>1361374539</a:ModificationDate>
+<a:Modifier>Nilmanduil</a:Modifier>
+<a:Parameter.DataType>int</a:Parameter.DataType>
+<a:ParameterType>I</a:ParameterType>
+</o:Parameter>
+<o:Parameter Id="o103">
+<a:ObjectID>DFA9AE83-CAFC-4FFA-B266-E2C9B079A8B8</a:ObjectID>
+<a:Name>p_destinationY</a:Name>
+<a:Code>pDestinationY</a:Code>
+<a:CreationDate>1361374497</a:CreationDate>
+<a:Creator>Nilmanduil</a:Creator>
+<a:ModificationDate>1361374539</a:ModificationDate>
+<a:Modifier>Nilmanduil</a:Modifier>
+<a:Parameter.DataType>int</a:Parameter.DataType>
+<a:ParameterType>I</a:ParameterType>
+</o:Parameter>
+</c:Parameters>
+</o:Operation>
+<o:Operation Id="o104">
+<a:ObjectID>C19A9B7E-CF41-4223-A6F9-7500EC5AD0C2</a:ObjectID>
+<a:Name>annulerMouvement</a:Name>
+<a:Code>annulerMouvement</a:Code>
+<a:CreationDate>1361374338</a:CreationDate>
+<a:Creator>Nilmanduil</a:Creator>
+<a:ModificationDate>1361374405</a:ModificationDate>
+<a:Modifier>Nilmanduil</a:Modifier>
+<a:ReturnType>int</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
 </c:Operations>
@@ -3649,10 +3758,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:RoleANavigability>1</a:RoleANavigability>
 <a:RoleBNavigability>0</a:RoleBNavigability>
 <c:Object1>
-<o:Class Ref="o34"/>
+<o:Class Ref="o37"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o35"/>
+<o:Class Ref="o38"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o31">
@@ -3666,10 +3775,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:RoleAMultiplicity>0..1</a:RoleAMultiplicity>
 <a:RoleBMultiplicity>0..*</a:RoleBMultiplicity>
 <c:Object1>
-<o:Class Ref="o43"/>
+<o:Class Ref="o46"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o35"/>
+<o:Class Ref="o38"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o33">
@@ -3683,10 +3792,35 @@ LABL 0 Arial,8,N</a:FontList>
 <a:RoleAMultiplicity>1..1</a:RoleAMultiplicity>
 <a:RoleBMultiplicity>0..1</a:RoleBMultiplicity>
 <c:Object1>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o43"/>
+<o:Class Ref="o46"/>
+</c:Object2>
+</o:Association>
+<o:Association Id="o36">
+<a:ObjectID>8CD8728E-17F7-4EF1-8571-7FCA74D3D5E7</a:ObjectID>
+<a:Name>Association_5</a:Name>
+<a:Code>association4</a:Code>
+<a:CreationDate>1361374416</a:CreationDate>
+<a:Creator>Nilmanduil</a:Creator>
+<a:ModificationDate>1361374465</a:ModificationDate>
+<a:Modifier>Nilmanduil</a:Modifier>
+<a:RoleAMultiplicity>1..1</a:RoleAMultiplicity>
+<a:RoleBMultiplicity>1..1</a:RoleBMultiplicity>
+<a:RoleANavigability>1</a:RoleANavigability>
+<a:RoleBNavigability>0</a:RoleBNavigability>
+<a:ExtendedAttributesText>{0DEDDB90-46E2-45A0-886E-411709DA0DC9},Java,276={72FA5C48-5524-4DF7-8187-ABB19AB5AF9E},roleAContainer,6=&lt;None&gt;
+{F6FFC71C-C472-4261-A710-B0BCC0BF4D58},roleAImplementationClass,6=&lt;None&gt;
+{C11C9F66-6453-43A2-8824-6654518CF65A},roleBImplementationClass,6=&lt;None&gt;
+{78C31404-0EE5-4FD0-9038-EE396B305F05},roleBContainer,6=&lt;None&gt;
+
+</a:ExtendedAttributesText>
+<c:Object1>
+<o:Class Ref="o38"/>
+</c:Object1>
+<c:Object2>
+<o:Class Ref="o47"/>
 </c:Object2>
 </o:Association>
 </c:Associations>
@@ -3700,10 +3834,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1360336180</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <c:Object1>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o38"/>
+<o:Class Ref="o41"/>
 </c:Object2>
 </o:Generalization>
 <o:Generalization Id="o12">
@@ -3715,10 +3849,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1360336182</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <c:Object1>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o39"/>
+<o:Class Ref="o42"/>
 </c:Object2>
 </o:Generalization>
 <o:Generalization Id="o15">
@@ -3730,10 +3864,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1360336183</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <c:Object1>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o40"/>
+<o:Class Ref="o43"/>
 </c:Object2>
 </o:Generalization>
 <o:Generalization Id="o18">
@@ -3745,10 +3879,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1360336185</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <c:Object1>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o41"/>
+<o:Class Ref="o44"/>
 </c:Object2>
 </o:Generalization>
 <o:Generalization Id="o21">
@@ -3760,10 +3894,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1360336186</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <c:Object1>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o42"/>
+<o:Class Ref="o45"/>
 </c:Object2>
 </o:Generalization>
 <o:Generalization Id="o28">
@@ -3775,21 +3909,21 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1360336323</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <c:Object1>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o37"/>
+<o:Class Ref="o40"/>
 </c:Object2>
 </o:Generalization>
 </c:Generalizations>
 <c:TargetModels>
-<o:TargetModel Id="o97">
+<o:TargetModel Id="o105">
 <a:ObjectID>3940D0F7-192E-4843-AC99-410754863779</a:ObjectID>
 <a:Name>Java</a:Name>
 <a:Code>Java</a:Code>
 <a:CreationDate>1360338720</a:CreationDate>
 <a:Creator>Nilmanduil</a:Creator>
-<a:ModificationDate>1360338720</a:ModificationDate>
+<a:ModificationDate>1361374289</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TargetModelURL>file:///%_OBJLANG%/java5-j2ee14.xol</a:TargetModelURL>
 <a:TargetModelID>0DEDDB90-46E2-45A0-886E-411709DA0DC9</a:TargetModelID>
@@ -3798,13 +3932,13 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Shortcut Ref="o3"/>
 </c:SessionShortcuts>
 </o:TargetModel>
-<o:TargetModel Id="o98">
+<o:TargetModel Id="o106">
 <a:ObjectID>CCC59109-1139-47B7-A624-B1F3957F74B5</a:ObjectID>
 <a:Name>WSDL for Java</a:Name>
 <a:Code>WSDLJava</a:Code>
 <a:CreationDate>1360338720</a:CreationDate>
 <a:Creator>Nilmanduil</a:Creator>
-<a:ModificationDate>1360338720</a:ModificationDate>
+<a:ModificationDate>1361374289</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TargetModelURL>file:///%_XEM%/WSDLJ2EE.xem</a:TargetModelURL>
 <a:TargetModelID>C8F5F7B2-CF9D-4E98-8301-959BB6E86C8A</a:TargetModelID>

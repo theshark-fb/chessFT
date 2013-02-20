@@ -4,7 +4,7 @@ import javax.swing.JPanel;
 
 public class Plateau extends JPanel{
 	
-	private String[] m_mouvements;
+	private Historique m_mouvements;
 	private int m_tourDeJeu = 1;
 	public static Case[][] m_plateau;
 	
@@ -75,33 +75,7 @@ public class Plateau extends JPanel{
 	{
 		int origineX = p_piece.getPositionX(), origineY = p_piece.getPositionY();
 		// Début initialisation historique
-		String histo;
-		boolean occupee = Plateau.getCase(p_destinationX, p_destinationY).occupee();
-		
-		String caractereDepart =  Integer.toString('a'-1+origineX);
-		String caractereArrivee =  Integer.toString('a'-1+p_destinationX);
-		histo = caractereDepart+Integer.toString(origineY)+"-"+caractereArrivee+Integer.toString(p_destinationY);
-		
-		if(p_piece.getLibelle() == "Roi")
-		{
-			histo = "R"+histo;
-		}
-		else if(p_piece.getLibelle() == "Reine")
-		{
-			histo = "D"+histo;
-		}
-		else if(p_piece.getLibelle() == "Tour")
-		{
-			histo = "T"+histo;
-		}
-		else if(p_piece.getLibelle() == "Fou")
-		{
-			histo = "F"+histo;
-		}
-		else if(p_piece.getLibelle() == "Cavalier")
-		{
-			histo = "C"+histo;
-		}
+		String histo = m_mouvements.prepareMouvement(p_piece, p_destinationX, p_destinationY); 
 		// Fin initialisation historique
 		
 		p_piece.setPositionX(p_destinationX);
@@ -112,19 +86,16 @@ public class Plateau extends JPanel{
 		
 		Plateau.getCase(origineX, origineY).supprimerPiece();
 		
-		if(occupee) histo += "x";
-		if(this.echec()) histo += "+";
-		if(this.mat()) histo += "+";
-		this.m_mouvements[this.m_mouvements.length] = histo;
+		m_mouvements.addMouvement(histo);
 		
-		if(!this.mat()) this.m_tourDeJeu++;
+		if(!Plateau.mat()) this.m_tourDeJeu++;
 	}
 	
-	public boolean echec(){
+	public static boolean echec(){
 		return false;
 	}
 	
-	public boolean mat(){
+	public static boolean mat(){
 		return false;
 	}
 	

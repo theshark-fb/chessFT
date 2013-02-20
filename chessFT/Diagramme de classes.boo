@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{1AF99237-1304-469F-BC5D-4779722773D7}" Label="" LastModificationDate="1360339919" Name="Diagramme de classes" Objects="82" Symbols="22" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{1AF99237-1304-469F-BC5D-4779722773D7}" Label="" LastModificationDate="1360340073" Name="Diagramme de classes" Objects="83" Symbols="22" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -2568,8 +2568,8 @@ Shadow=0</a:DisplayPreferences>
 <o:GeneralizationSymbol Id="o19">
 <a:CreationDate>1360336186</a:CreationDate>
 <a:ModificationDate>1360339639</a:ModificationDate>
-<a:Rect>((8981,6225), (25446,10152))</a:Rect>
-<a:ListOfPoints>((25446,6225),(25446,10152),(8981,10152))</a:ListOfPoints>
+<a:Rect>((8981,6397), (25445,10152))</a:Rect>
+<a:ListOfPoints>((25445,6397),(25445,10152),(8981,10152))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>7</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -2856,7 +2856,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1360335983</a:CreationDate>
 <a:ModificationDate>1360339639</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((21959,3640), (37894,7459))</a:Rect>
+<a:Rect>((21958,3153), (37895,7946))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -3428,7 +3428,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>Pion</a:Code>
 <a:CreationDate>1360335983</a:CreationDate>
 <a:Creator>Nilmanduil</a:Creator>
-<a:ModificationDate>1360339636</a:ModificationDate>
+<a:ModificationDate>1360340073</a:ModificationDate>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
@@ -3456,6 +3456,17 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
+<o:Operation Id="o83">
+<a:ObjectID>B4900839-A3AC-4641-AC85-3EC49E23EF79</a:ObjectID>
+<a:Name>getPremierDeplacement</a:Name>
+<a:Code>getPremierDeplacement</a:Code>
+<a:CreationDate>1360340041</a:CreationDate>
+<a:Creator>Nilmanduil</a:Creator>
+<a:ModificationDate>1360340073</a:ModificationDate>
+<a:Modifier>Nilmanduil</a:Modifier>
+<a:ReturnType>boolean</a:ReturnType>
+<a:TemplateBody>%DefaultBody%</a:TemplateBody>
+</o:Operation>
 </c:Operations>
 </o:Class>
 <o:Class Id="o43">
@@ -3468,7 +3479,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o83">
+<o:Attribute Id="o84">
 <a:ObjectID>AFC05E5E-A7E5-4856-A034-98FB596641CB</a:ObjectID>
 <a:Name>m_surlignee</a:Name>
 <a:Code>m_surlignee</a:Code>
@@ -3480,7 +3491,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>transparent</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o84">
+<o:Attribute Id="o85">
 <a:ObjectID>449C3D52-78BB-4199-B6FF-8A5A34D4C756</a:ObjectID>
 <a:Name>m_positionX</a:Name>
 <a:Code>m_positionX</a:Code>
@@ -3491,7 +3502,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o85">
+<o:Attribute Id="o86">
 <a:ObjectID>F9BAC208-5534-4F6F-8A46-BEA12BF345D9</a:ObjectID>
 <a:Name>m_positionY</a:Name>
 <a:Code>m_positionY</a:Code>
@@ -3504,7 +3515,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o86">
+<o:Operation Id="o87">
 <a:ObjectID>971B5FB2-CF66-4B61-AEFB-FF7264C08E5E</a:ObjectID>
 <a:Name>getPositionX</a:Name>
 <a:Code>getPositionX</a:Code>
@@ -3515,7 +3526,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>int</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o87">
+<o:Operation Id="o88">
 <a:ObjectID>C197F67D-C387-4D12-9701-134455D371B9</a:ObjectID>
 <a:Name>getPositionY</a:Name>
 <a:Code>getPositionY</a:Code>
@@ -3526,7 +3537,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>int</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o88">
+<o:Operation Id="o89">
 <a:ObjectID>D7B8BB7C-EF1F-4F0E-93C6-B0515DE50087</a:ObjectID>
 <a:Name>getSurlignee</a:Name>
 <a:Code>getSurlignee</a:Code>
@@ -3537,7 +3548,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>String</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o89">
+<o:Operation Id="o90">
 <a:ObjectID>27C50D52-6651-45EF-A70B-FFA5DE868B1A</a:ObjectID>
 <a:Name>setSurlignee</a:Name>
 <a:Code>setSurlignee</a:Code>
@@ -3547,7 +3558,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o90">
+<o:Parameter Id="o91">
 <a:ObjectID>033D217B-2C91-4DB3-BE98-8BF7BFA3AABE</a:ObjectID>
 <a:Name>p_surlignee</a:Name>
 <a:Code>pSurlignee</a:Code>
@@ -3560,7 +3571,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Parameter>
 </c:Parameters>
 </o:Operation>
-<o:Operation Id="o91">
+<o:Operation Id="o92">
 <a:ObjectID>972E7ECD-8F9A-4BB0-AD29-F70DAB2F1094</a:ObjectID>
 <a:Name>setPiece</a:Name>
 <a:Code>setPiece</a:Code>
@@ -3570,7 +3581,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o92">
+<o:Parameter Id="o93">
 <a:ObjectID>1994032E-8DFE-472D-ADCF-C2FE51049380</a:ObjectID>
 <a:Name>p_piece</a:Name>
 <a:Code>pPiece</a:Code>
@@ -3586,7 +3597,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Parameter>
 </c:Parameters>
 </o:Operation>
-<o:Operation Id="o93">
+<o:Operation Id="o94">
 <a:ObjectID>60E71346-2742-4ABB-9BF0-CE25C3406742</a:ObjectID>
 <a:Name>getPiece</a:Name>
 <a:Code>getPiece</a:Code>
@@ -3600,7 +3611,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Class Ref="o36"/>
 </c:ObjectReturnType>
 </o:Operation>
-<o:Operation Id="o94">
+<o:Operation Id="o95">
 <a:ObjectID>815AB674-1CEE-44AA-A1B1-7626FF21D999</a:ObjectID>
 <a:Name>supprimerPiece</a:Name>
 <a:Code>supprimerPiece</a:Code>
@@ -3610,7 +3621,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Nilmanduil</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o95">
+<o:Operation Id="o96">
 <a:ObjectID>F94A87AB-B7ED-42A6-9C4F-D83159209C59</a:ObjectID>
 <a:Name>occupee</a:Name>
 <a:Code>occupee</a:Code>
@@ -3772,7 +3783,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Generalization>
 </c:Generalizations>
 <c:TargetModels>
-<o:TargetModel Id="o96">
+<o:TargetModel Id="o97">
 <a:ObjectID>3940D0F7-192E-4843-AC99-410754863779</a:ObjectID>
 <a:Name>Java</a:Name>
 <a:Code>Java</a:Code>
@@ -3787,7 +3798,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Shortcut Ref="o3"/>
 </c:SessionShortcuts>
 </o:TargetModel>
-<o:TargetModel Id="o97">
+<o:TargetModel Id="o98">
 <a:ObjectID>CCC59109-1139-47B7-A624-B1F3957F74B5</a:ObjectID>
 <a:Name>WSDL for Java</a:Name>
 <a:Code>WSDLJava</a:Code>
