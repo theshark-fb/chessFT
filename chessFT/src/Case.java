@@ -40,6 +40,11 @@ public class Case {
 	public void supprimerPiece(){
 		this.m_piece = null;
 	}
+	
+	public boolean occupee()
+	{
+		return (this.m_piece == null);
+	}
 
 	/**
 	 * @param args
