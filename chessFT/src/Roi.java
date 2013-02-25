@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public class Roi extends Piece {
 
@@ -14,9 +16,8 @@ public class Roi extends Piece {
 		return this.m_roque;
 	}
 	
-	public Case[] destinations(){
-		int i = 0;
-		Case[] cases = new Case[8];
+	public ArrayList<Case> destinations(){
+		ArrayList<Case> cases = new ArrayList<Case>();
 		
 		return cases;
 	}

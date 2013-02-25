@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public class Reine extends Piece {
 
@@ -8,9 +10,8 @@ public class Reine extends Piece {
 		this.m_positionY = p_positionY;
 	}
 	
-	public Case[] destinations(){
-		int i = 0;
-		Case[] cases = new Case[24];
+	public ArrayList<Case> destinations(){
+		ArrayList<Case> cases = new ArrayList<Case>();
 		
 		return cases;
 	}

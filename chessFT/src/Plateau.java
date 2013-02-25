@@ -23,16 +23,16 @@ public class Plateau extends JPanel{
 		
 		/* Blancs */
 		Plateau.getCase(1, 1).setPiece(new Tour("blanc", 1, 1));
-		Plateau.getCase(2, 1).setPiece(new Cavalier("blanc", 2, 1));
-		Plateau.getCase(2, 1).setPiece(new Fou("blanc", 3, 1));
-		Plateau.getCase(4, 1).setPiece(new Reine("blanc", 4, 1));
-		Plateau.getCase(5, 1).setPiece(new Roi("blanc", 5, 1));
-		Plateau.getCase(6, 1).setPiece(new Fou("blanc", 6, 1));
-		Plateau.getCase(7, 1).setPiece(new Cavalier("blanc", 7, 1));
-		Plateau.getCase(8, 1).setPiece(new Tour("blanc", 8, 1));
+		Plateau.getCase(2, 1).setPiece(new Cavalier("blanc", 1, 2));
+		Plateau.getCase(2, 1).setPiece(new Fou("blanc", 1, 3));
+		Plateau.getCase(4, 1).setPiece(new Reine("blanc", 1, 4));
+		Plateau.getCase(5, 1).setPiece(new Roi("blanc", 1, 5));
+		Plateau.getCase(6, 1).setPiece(new Fou("blanc", 1, 6));
+		Plateau.getCase(7, 1).setPiece(new Cavalier("blanc", 1, 7));
+		Plateau.getCase(8, 1).setPiece(new Tour("blanc", 1, 8));
 		for(y = 1; y <= 8; y++)
 		{
-			Plateau.getCase(y, 2).setPiece(new Pion("blanc", y, 2));
+			Plateau.getCase(2, y).setPiece(new Pion("blanc", 2, y));
 		}
 		
 		/* Noirs */
@@ -46,7 +46,7 @@ public class Plateau extends JPanel{
 		Plateau.getCase(8, 8).setPiece(new Tour("noir", 8, 8));
 		for(y = 1; y <= 8; y++)
 		{
-			Plateau.getCase(y, 7).setPiece(new Pion("noir", y, 7));
+			Plateau.getCase(7, y).setPiece(new Pion("noir", 7, y));
 		}
 	}
 	
@@ -69,22 +69,6 @@ public class Plateau extends JPanel{
 			}
 		}
 	}
-	
-	/*public void paintComponent(Graphics g){
-		g.setColor(Color.GRAY);
-		g.fillRect(0, 0, 400, 432);
-		for(int i=0;i<8;i++){
-			for(int j=0;j<8;j++){
-				if((i+j)%2 != 0)
-					g.setColor(Color.DARK_GRAY);
-				else
-					g.setColor(Color.LIGHT_GRAY);
-				g.fillRect(i*m_tailleCase, j*m_tailleCase, m_tailleCase, m_tailleCase);
-			}
-		}
-	}*/
-	
-
 	
 	public static Case getCase(int p_positionX, int p_positionY){
 		return Plateau.m_plateau[p_positionX - 1][p_positionY - 1];

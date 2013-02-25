@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public class Pion extends Piece {
 	
@@ -24,38 +26,31 @@ public class Pion extends Piece {
 		
 	}
 	
-	public Case[] destinations(){
-		int i = 0;
-		Case[] cases = new Case[3];
+	public ArrayList<Case> destinations(){
+		ArrayList<Case> cases = new ArrayList<Case>();
 		int pos_x = this.m_positionX;
 		int pos_y = this.m_positionY;
-		if(this.m_couleur == "blanche")
-			pos_x += 1;
+		int pas;
+		if(this.m_couleur == "blanc")
+			pas = 1;
 		else
-			pos_x -= 1;
+			pas = -1;
 		if(pos_x>0 && pos_x<7){
-			//ok
-			if(Plateau.getCase(pos_x, pos_y).getPiece() == null){
-				cases[i] = Plateau.getCase(pos_x, pos_y);
-				i++;
+			if(Plateau.getCase(pos_x+pas, pos_y).getPiece() == null){
+				cases.add(Plateau.getCase(pos_x+pas, pos_y));
 			}
 			if(pos_y>0){
-				//ok
-				if(Plateau.getCase(pos_x, pos_y-1).getPiece() != null && Plateau.getCase(pos_x, pos_y-1).getPiece().getCouleur() != this.getCouleur()){
-					cases[i] = Plateau.getCase(pos_x, pos_y-1);
-					i++;
+				if(Plateau.getCase(pos_x+pas, pos_y-1).getPiece() != null && Plateau.getCase(pos_x+pas, pos_y-1).getPiece().getCouleur() != this.getCouleur()){
+					cases.add(Plateau.getCase(pos_x+pas, pos_y-1));
 				}
 			}
 			if(pos_y<7){
-				//ok
-				if(Plateau.getCase(pos_x, pos_y+1).getPiece() != null && Plateau.getCase(pos_x, pos_y+1).getPiece().getCouleur() != this.getCouleur()){
-					cases[i] = Plateau.getCase(pos_x, pos_y+1);
-					i++;
+				if(Plateau.getCase(pos_x+pas, pos_y+1).getPiece() != null && Plateau.getCase(pos_x+pas, pos_y+1).getPiece().getCouleur() != this.getCouleur()){
+					cases.add(Plateau.getCase(pos_x+pas, pos_y+1));
 				}
 			}
-			if(m_premierDeplacement && Plateau.getCase(pos_x, pos_y) == null && Plateau.getCase(pos_x+pos_x, pos_y) == null){
-				cases[i] = Plateau.getCase(pos_x, pos_y+pos_y);
-				i++;
+			if(m_premierDeplacement == true && Plateau.getCase(pos_x+pas, pos_y).getPiece() == null && Plateau.getCase(pos_x+pas+pas, pos_y).getPiece() == null){
+				cases.add(Plateau.getCase(pos_x+pas+pas, pos_y));
 			}
 		}
 		return cases;

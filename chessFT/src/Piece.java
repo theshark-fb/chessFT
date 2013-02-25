@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public abstract class Piece {
 	
@@ -39,7 +41,7 @@ public abstract class Piece {
 		return this.m_couleur;
 	}
 	
-	public abstract Case[] destinations();
+	public abstract ArrayList<Case> destinations();
 
 	/**
 	 * @param args

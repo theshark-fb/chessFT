@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public class Tour extends Piece {
 
@@ -14,9 +16,8 @@ public class Tour extends Piece {
 		return this.m_roque;
 	}
 	
-	public Case[] destinations(){
-		int i = 0;
-		Case[] cases = new Case[14];
+	public ArrayList<Case> destinations(){
+		ArrayList<Case> cases = new ArrayList<Case>();
 		
 		return cases;
 	}
