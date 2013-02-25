@@ -3,6 +3,7 @@ public class Case {
 	
 	private int m_positionX;
 	private int m_positionY;
+	//private String
 	private Piece m_piece = null;
 	private String m_surlignee;
 	
