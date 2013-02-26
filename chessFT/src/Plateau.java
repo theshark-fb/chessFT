@@ -43,7 +43,7 @@ public class Plateau extends JPanel{
 		Plateau.getCase(8, 5).setPiece(new Roi("noir", 8, 5));
 		Plateau.getCase(8, 6).setPiece(new Fou("noir", 8, 6));
 		Plateau.getCase(8, 7).setPiece(new Cavalier("noir", 8, 7));
-		Plateau.getCase(8, 8).setPiece(new Tour("noir", 8, 8));
+		Plateau.getCase(6, 6).setPiece(new Tour("noir", 6, 6));
 		for(y = 1; y <= 8; y++)
 		{
 			Plateau.getCase(7, y).setPiece(new Pion("noir", 7, y));

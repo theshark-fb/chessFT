@@ -1,6 +1,7 @@
-*destination() Fou, Reine, Tour
+*destination() Fou, Reine
 *Pour chaque destination(), rajouter la condition de ne pas mettre le roi en echec pour chaque mouvement
 *Pour roi.destination(), faire le roque
+*Optimiser destination()
 *echec()
 *mat()
 *pat()
