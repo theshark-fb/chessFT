@@ -35,16 +35,16 @@ public class Pion extends Piece {
 			pas = 1;
 		else
 			pas = -1;
-		if(pos_x>0 && pos_x<7){
+		if(pos_x>1 && pos_x<8){
 			if(Plateau.getCase(pos_x+pas, pos_y).getPiece() == null){
 				cases.add(Plateau.getCase(pos_x+pas, pos_y));
 			}
-			if(pos_y>0){
+			if(pos_y>1){
 				if(Plateau.getCase(pos_x+pas, pos_y-1).getPiece() != null && Plateau.getCase(pos_x+pas, pos_y-1).getPiece().getCouleur() != this.getCouleur()){
 					cases.add(Plateau.getCase(pos_x+pas, pos_y-1));
 				}
 			}
-			if(pos_y<7){
+			if(pos_y<8){
 				if(Plateau.getCase(pos_x+pas, pos_y+1).getPiece() != null && Plateau.getCase(pos_x+pas, pos_y+1).getPiece().getCouleur() != this.getCouleur()){
 					cases.add(Plateau.getCase(pos_x+pas, pos_y+1));
 				}

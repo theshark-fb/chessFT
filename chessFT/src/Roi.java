@@ -20,13 +20,13 @@ public class Roi extends Piece {
 		ArrayList<Case> cases = new ArrayList<Case>();
 		int pos_x = this.m_positionX;
 		int pos_y = this.m_positionY;
-		if(pos_x>0 && (Plateau.getCase(pos_x-1, pos_y).getPiece() == null || Plateau.getCase(pos_x-1, pos_y).getPiece().getCouleur() != this.getCouleur()))
+		if(pos_x>1 && (Plateau.getCase(pos_x-1, pos_y).getPiece() == null || Plateau.getCase(pos_x-1, pos_y).getPiece().getCouleur() != this.getCouleur()))
 			cases.add(Plateau.getCase(pos_x-1, pos_y));
-		if(pos_x<7 && (Plateau.getCase(pos_x+1, pos_y).getPiece() == null || Plateau.getCase(pos_x+1, pos_y).getPiece().getCouleur() != this.getCouleur()))
+		if(pos_x<8 && (Plateau.getCase(pos_x+1, pos_y).getPiece() == null || Plateau.getCase(pos_x+1, pos_y).getPiece().getCouleur() != this.getCouleur()))
 			cases.add(Plateau.getCase(pos_x+1, pos_y));
-		if(pos_y>0 && (Plateau.getCase(pos_x, pos_y-1).getPiece() == null || Plateau.getCase(pos_x, pos_y-1).getPiece().getCouleur() != this.getCouleur()))
+		if(pos_y>1 && (Plateau.getCase(pos_x, pos_y-1).getPiece() == null || Plateau.getCase(pos_x, pos_y-1).getPiece().getCouleur() != this.getCouleur()))
 			cases.add(Plateau.getCase(pos_x, pos_y-1));
-		if(pos_y<7 && (Plateau.getCase(pos_x, pos_y+1).getPiece() == null || Plateau.getCase(pos_x, pos_y+1).getPiece().getCouleur() != this.getCouleur()))
+		if(pos_y<8 && (Plateau.getCase(pos_x, pos_y+1).getPiece() == null || Plateau.getCase(pos_x, pos_y+1).getPiece().getCouleur() != this.getCouleur()))
 			cases.add(Plateau.getCase(pos_x, pos_y+1));
 		return cases;
 	}

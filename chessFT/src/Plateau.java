@@ -23,26 +23,26 @@ public class Plateau extends JPanel{
 		
 		/* Blancs */
 		Plateau.getCase(1, 1).setPiece(new Tour("blanc", 1, 1));
-		Plateau.getCase(2, 1).setPiece(new Cavalier("blanc", 1, 2));
-		Plateau.getCase(2, 1).setPiece(new Fou("blanc", 1, 3));
-		Plateau.getCase(4, 1).setPiece(new Reine("blanc", 1, 4));
-		Plateau.getCase(5, 1).setPiece(new Roi("blanc", 1, 5));
-		Plateau.getCase(6, 1).setPiece(new Fou("blanc", 1, 6));
-		Plateau.getCase(7, 1).setPiece(new Cavalier("blanc", 1, 7));
-		Plateau.getCase(8, 1).setPiece(new Tour("blanc", 1, 8));
+		Plateau.getCase(1, 2).setPiece(new Cavalier("blanc", 1, 2));
+		Plateau.getCase(1, 3).setPiece(new Fou("blanc", 1, 3));
+		Plateau.getCase(1, 4).setPiece(new Reine("blanc", 1, 4));
+		Plateau.getCase(1, 5).setPiece(new Roi("blanc", 1, 5));
+		Plateau.getCase(1, 6).setPiece(new Fou("blanc", 1, 6));
+		Plateau.getCase(1, 7).setPiece(new Cavalier("blanc", 1, 7));
+		Plateau.getCase(1, 8).setPiece(new Tour("blanc", 1, 8));
 		for(y = 1; y <= 8; y++)
 		{
 			Plateau.getCase(2, y).setPiece(new Pion("blanc", 2, y));
 		}
 		
 		/* Noirs */
-		Plateau.getCase(1, 8).setPiece(new Tour("noir", 1, 8));
-		Plateau.getCase(2, 8).setPiece(new Cavalier("noir", 2, 8));
-		Plateau.getCase(3, 8).setPiece(new Fou("noir", 3, 8));
-		Plateau.getCase(4, 8).setPiece(new Reine("noir", 4, 8));
-		Plateau.getCase(5, 8).setPiece(new Roi("noir", 5, 8));
-		Plateau.getCase(6, 8).setPiece(new Fou("noir", 6, 8));
-		Plateau.getCase(7, 8).setPiece(new Cavalier("noir", 7, 8));
+		Plateau.getCase(8, 1).setPiece(new Tour("noir", 8, 1));
+		Plateau.getCase(8, 2).setPiece(new Cavalier("noir", 8, 2));
+		Plateau.getCase(8, 3).setPiece(new Fou("noir", 8, 3));
+		Plateau.getCase(8, 4).setPiece(new Reine("noir", 8, 4));
+		Plateau.getCase(8, 5).setPiece(new Roi("noir", 8, 5));
+		Plateau.getCase(8, 6).setPiece(new Fou("noir", 8, 6));
+		Plateau.getCase(8, 7).setPiece(new Cavalier("noir", 8, 7));
 		Plateau.getCase(8, 8).setPiece(new Tour("noir", 8, 8));
 		for(y = 1; y <= 8; y++)
 		{
