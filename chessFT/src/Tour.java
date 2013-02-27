@@ -36,10 +36,10 @@ public class Tour extends Piece {
 		pas = 0;
 		while(pos_x+pas<=8 && !fin){
 			if(Plateau.getCase(pos_x+pas, pos_y).getPiece() == null){
-				cases.add(Plateau.getCase(pos_x-pas, pos_y));
+				cases.add(Plateau.getCase(pos_x+pas, pos_y));
 			}
 			else if(Plateau.getCase(pos_x+pas, pos_y).getPiece().getCouleur() != this.m_couleur){
-				cases.add(Plateau.getCase(pos_x-pas, pos_y));
+				cases.add(Plateau.getCase(pos_x+pas, pos_y));
 				fin = true;
 			}
 			pas++;

@@ -32,6 +32,10 @@ public class Fenetre extends JFrame {
 		for(int i=0;i<cases.size();i++){
 			int pos_x = cases.get(i).getPositionX();
 			int pos_y = cases.get(i).getPositionY();
+			System.out.print("Pos_x : ");
+			System.out.print(pos_x);
+			System.out.print(" & Pos_y : ");
+			System.out.println(pos_y);
 			Plateau.getCase(pos_x, pos_y).setSurlignee("destination");
 			System.out.println(i);
 		}

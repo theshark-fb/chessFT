@@ -1,6 +1,10 @@
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
+import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 
 public class Plateau extends JPanel{
 	
@@ -39,7 +43,7 @@ public class Plateau extends JPanel{
 		Plateau.getCase(8, 1).setPiece(new Tour("noir", 8, 1));
 		Plateau.getCase(8, 2).setPiece(new Cavalier("noir", 8, 2));
 		Plateau.getCase(8, 3).setPiece(new Fou("noir", 8, 3));
-		Plateau.getCase(8, 4).setPiece(new Reine("noir", 8, 4));
+		Plateau.getCase(4, 4).setPiece(new Reine("noir", 4, 4));
 		Plateau.getCase(8, 5).setPiece(new Roi("noir", 8, 5));
 		Plateau.getCase(8, 6).setPiece(new Fou("noir", 8, 6));
 		Plateau.getCase(8, 7).setPiece(new Cavalier("noir", 8, 7));
@@ -65,7 +69,19 @@ public class Plateau extends JPanel{
 					else
 						g.setColor(Color.LIGHT_GRAY);
 				}
+				int marge = (m_tailleCase-30)/2;
 				g.fillRect(i*m_tailleCase, j*m_tailleCase, m_tailleCase, m_tailleCase);
+				if(Plateau.getCase(i+1, j+1).getPiece() != null){
+					try{
+						String nom_image = "res/" + Plateau.getCase(i+1, j+1).getPiece().getLibelle() + "_" + Plateau.getCase(i+1, j+1).getPiece().getCouleur() + ".png";
+				      	System.out.println(nom_image);
+						Image img = ImageIO.read(new File(nom_image));
+				      	g.drawImage(img, i*m_tailleCase+marge, j*m_tailleCase+marge, this);
+				    }
+					catch (IOException e){
+				      	e.printStackTrace();
+					}
+				}
 			}
 		}
 	}

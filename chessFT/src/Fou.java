@@ -49,7 +49,7 @@ public class Fou extends Piece {
 		}
 		fin = false;
 		pas = 0;
-		while(pos_x-pas>=1 && pos_y+pas>=1 && !fin){
+		while(pos_x-pas>=1 && pos_y+pas<=8 && !fin){
 			if(Plateau.getCase(pos_x-pas, pos_y+pas).getPiece() == null)
 				cases.add(Plateau.getCase(pos_x-pas, pos_y+pas));
 			else if(Plateau.getCase(pos_x-pas, pos_y+pas).getPiece().getCouleur() != this.getCouleur()){
