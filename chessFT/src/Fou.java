@@ -14,7 +14,7 @@ public class Fou extends Piece {
 		int pos_x = this.m_positionX;
 		int pos_y = this.m_positionY;
 		ArrayList<Case> cases = new ArrayList<Case>();
-		int pas = 0;
+		int pas = 1;
 		boolean fin = false;
 		while(pos_x-pas>=1 && pos_y-pas>=1 && !fin){
 			if(Plateau.getCase(pos_x-pas, pos_y-pas).getPiece() == null)
@@ -23,10 +23,12 @@ public class Fou extends Piece {
 				cases.add(Plateau.getCase(pos_x-pas, pos_y-pas));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x-pas, pos_y-pas).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
 		}
 		fin = false;
-		pas = 0;
+		pas = 1;
 		while(pos_x+pas<=8 && pos_y-pas>=1 && !fin){
 			if(Plateau.getCase(pos_x+pas, pos_y-pas).getPiece() == null)
 				cases.add(Plateau.getCase(pos_x+pas, pos_y-pas));
@@ -34,10 +36,12 @@ public class Fou extends Piece {
 				cases.add(Plateau.getCase(pos_x+pas, pos_y-pas));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x+pas, pos_y-pas).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
 		}
 		fin = false;
-		pas = 0;
+		pas = 1;
 		while(pos_x+pas<=8 && pos_y+pas<=8 && !fin){
 			if(Plateau.getCase(pos_x+pas, pos_y+pas).getPiece() == null)
 				cases.add(Plateau.getCase(pos_x+pas, pos_y+pas));
@@ -45,10 +49,12 @@ public class Fou extends Piece {
 				cases.add(Plateau.getCase(pos_x+pas, pos_y+pas));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x+pas, pos_y+pas).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
 		}
 		fin = false;
-		pas = 0;
+		pas = 1;
 		while(pos_x-pas>=1 && pos_y+pas<=8 && !fin){
 			if(Plateau.getCase(pos_x-pas, pos_y+pas).getPiece() == null)
 				cases.add(Plateau.getCase(pos_x-pas, pos_y+pas));
@@ -56,6 +62,8 @@ public class Fou extends Piece {
 				cases.add(Plateau.getCase(pos_x-pas, pos_y+pas));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x-pas, pos_y+pas).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
 		}
 		return cases;

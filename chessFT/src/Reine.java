@@ -14,9 +14,9 @@ public class Reine extends Piece {
 		ArrayList<Case> cases = new ArrayList<Case>();
 		int pos_x = this.m_positionX;
 		int pos_y = this.m_positionY;
-		int pas = 0;
+		int pas = 1;
 		boolean fin = false;
-		/*while(pos_x-pas>=1 && !fin){
+		while(pos_x-pas>=1 && !fin){
 			if(Plateau.getCase(pos_x-pas, pos_y).getPiece() == null){
 				cases.add(Plateau.getCase(pos_x-pas, pos_y));
 			}
@@ -24,10 +24,12 @@ public class Reine extends Piece {
 				cases.add(Plateau.getCase(pos_x-pas, pos_y));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x-pas, pos_y).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
 		}
 		fin = false;
-		pas = 0;*/
+		pas = 1;
 		while(pos_x+pas<=8 && !fin){
 			if(Plateau.getCase(pos_x+pas, pos_y).getPiece() == null){
 				cases.add(Plateau.getCase(pos_x+pas, pos_y));
@@ -36,11 +38,13 @@ public class Reine extends Piece {
 				cases.add(Plateau.getCase(pos_x+pas, pos_y));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x+pas, pos_y).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
 		}
 		fin = false;
-		pas = 0;
-		/*while(pos_y-pas>=1 && !fin){
+		pas = 1;
+		while(pos_y-pas>=1 && !fin){
 			if(Plateau.getCase(pos_x, pos_y-pas).getPiece() == null){
 				cases.add(Plateau.getCase(pos_x, pos_y-pas));
 			}
@@ -48,10 +52,12 @@ public class Reine extends Piece {
 				cases.add(Plateau.getCase(pos_x, pos_y-pas));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x, pos_y-pas).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
 		}
 		fin = false;
-		pas = 0;
+		pas = 1;
 		while(pos_y+pas<=8 && !fin){
 			if(Plateau.getCase(pos_x, pos_y+pas).getPiece() == null){
 				cases.add(Plateau.getCase(pos_x, pos_y+pas));
@@ -60,10 +66,12 @@ public class Reine extends Piece {
 				cases.add(Plateau.getCase(pos_x, pos_y+pas));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x, pos_y+pas).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
 		}
 		fin = false;
-		pas = 0;
+		pas = 1;
 		while(pos_x-pas>=1 && pos_y-pas>=1 && !fin){
 			if(Plateau.getCase(pos_x-pas, pos_y-pas).getPiece() == null)
 				cases.add(Plateau.getCase(pos_x-pas, pos_y-pas));
@@ -71,10 +79,12 @@ public class Reine extends Piece {
 				cases.add(Plateau.getCase(pos_x-pas, pos_y-pas));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x-pas, pos_y-pas).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
 		}
 		fin = false;
-		pas = 0;
+		pas = 1;
 		while(pos_x+pas<=8 && pos_y-pas>=1 && !fin){
 			if(Plateau.getCase(pos_x+pas, pos_y-pas).getPiece() == null)
 				cases.add(Plateau.getCase(pos_x+pas, pos_y-pas));
@@ -82,10 +92,12 @@ public class Reine extends Piece {
 				cases.add(Plateau.getCase(pos_x+pas, pos_y-pas));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x+pas, pos_y-pas).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
 		}
 		fin = false;
-		pas = 0;
+		pas = 1;
 		while(pos_x+pas<=8 && pos_y+pas<=8 && !fin){
 			if(Plateau.getCase(pos_x+pas, pos_y+pas).getPiece() == null)
 				cases.add(Plateau.getCase(pos_x+pas, pos_y+pas));
@@ -93,10 +105,12 @@ public class Reine extends Piece {
 				cases.add(Plateau.getCase(pos_x+pas, pos_y+pas));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x+pas, pos_y+pas).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
 		}
 		fin = false;
-		pas = 0;
+		pas = 1;
 		while(pos_x-pas>=1 && pos_y+pas<=8 && !fin){
 			if(Plateau.getCase(pos_x-pas, pos_y+pas).getPiece() == null)
 				cases.add(Plateau.getCase(pos_x-pas, pos_y+pas));
@@ -104,8 +118,10 @@ public class Reine extends Piece {
 				cases.add(Plateau.getCase(pos_x-pas, pos_y+pas));
 				fin = true;
 			}
+			else if(Plateau.getCase(pos_x-pas, pos_y+pas).getPiece().getCouleur() == this.getCouleur())
+				fin = true;
 			pas++;
-		}*/
+		}
 		return cases;
 	}
 	
