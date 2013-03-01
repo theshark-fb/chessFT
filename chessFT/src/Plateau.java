@@ -100,18 +100,34 @@ public class Plateau extends JPanel{
 	
 	public void deplacer(Piece p_piece, int p_destinationX, int p_destinationY)
 	{
+		Case caseDestination = Plateau.getCase(p_destinationX, p_destinationY);
+		boolean roque = (p_piece.getClass().getName() == "Roi" && caseDestination.getPiece() != null && caseDestination.getPiece().getClass().getName() == "Tour" && p_piece.getCouleur() == caseDestination.getPiece().getCouleur());
 		int origineX = p_piece.getPositionX(), origineY = p_piece.getPositionY();
 		// Début initialisation historique
-		String histo = m_mouvements.prepareMouvement(p_piece, p_destinationX, p_destinationY); 
+		String histo = m_mouvements.prepareMouvement(p_piece, p_destinationX, p_destinationY);
 		// Fin initialisation historique
+		
+		if(roque) {
+			Tour tour = (Tour) caseDestination.getPiece();
+		}
 		
 		p_piece.setPositionX(p_destinationX);
 		p_piece.setPositionY(p_destinationY);
-		if(p_piece.getLibelle() == "Pion") p_piece.setPremierDeplacement();
+		if(p_piece.getClass().getName() == "Pion") {
+			Pion pion = (Pion) p_piece;
+			pion.setPremierDeplacement();
+		}
 		
-		Plateau.getCase(p_destinationX, p_destinationY).setPiece(p_piece);
+		caseDestination.setPiece(p_piece);
 		
 		Plateau.getCase(origineX, origineY).supprimerPiece();
+		
+		if(roque)
+		{
+			tour.setPositionX(origineX);
+			tour.setPositionY(origineY);
+			Plateau.getCase(origineX, origineY).setPiece(tour);
+		}
 		
 		m_mouvements.addMouvement(histo);
 		

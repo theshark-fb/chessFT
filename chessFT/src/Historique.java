@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+
 
 public class Historique {
 	
-	private String[] m_mouvements;
+	private ArrayList<String> m_mouvements;
 	
 	public Historique()
 	{
@@ -23,7 +25,9 @@ public class Historique {
 		String caractereArrivee =  Integer.toString('a'-1+p_destinationX);
 		histo = p_piece.getType()+caractereDepart+Integer.toString(origineY)+"-"+caractereArrivee+Integer.toString(p_destinationY);
 		
-		if(occupee) histo += "x";
+		if(occupee) {
+			histo += "x";
+		}
 		return histo;
 	}
 	
@@ -31,7 +35,7 @@ public class Historique {
 	{
 		if(Plateau.echec()) histo += "+";
 		if(Plateau.mat()) histo += "+";
-		this.m_mouvements[this.m_mouvements.length] = histo;
+		this.m_mouvements.add(histo);
 	}
 	
 	public void annulerMouvement()
@@ -41,7 +45,6 @@ public class Historique {
 	
 	public String getTour(int tour)
 	{
-		
-		return new String("");
+		return m_mouvements.get(tour/2)+" "+m_mouvements.get(tour/2+1);
 	}
 }
