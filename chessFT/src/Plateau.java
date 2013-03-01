@@ -137,16 +137,19 @@ public class Plateau extends JPanel{
 	}
 	
 	public static boolean echec(){
+		// TODO
 		return false;
 	}
 	
 	public static boolean mat(){
+		// TODO
 		return false;
 	}
 	
-	/*public boolean pat(){
-		
-	}*/
+	public boolean pat(){
+		// TODO
+		return false;
+	}
 	
 	public int getTailleCase(){
 		return m_tailleCase;
