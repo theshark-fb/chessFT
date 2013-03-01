@@ -58,6 +58,11 @@ public class Plateau extends JPanel{
 		}
 	}
 	
+	public int getTourDeJeu()
+	{
+		return this.m_tourDeJeu;
+	}
+	
 	public void paintComponent(Graphics g){
 		String surlignee;
 		for(int i=0;i<8;i++){

@@ -62,6 +62,11 @@ public class Fenetre extends JFrame implements MouseListener  {
     	Case caseCliquee = Plateau.getCase(coordX, coordY);
     	Piece pieceCliquee = caseCliquee.getPiece();
     	
+    	if(pieceCliquee != null && ((m_plateau.getTourDeJeu()%2 == 0 && pieceCliquee.getCouleur() == "blanc") || (m_plateau.getTourDeJeu()%2 == 1 && pieceCliquee.getCouleur() == "noir")))
+    	{
+    		return;
+    	}
+    	
     	if(pieceCliquee != null && this.m_caseSelectionnee == null)
     	{
     		caseCliquee.setSurlignee("selection");
@@ -70,14 +75,25 @@ public class Fenetre extends JFrame implements MouseListener  {
     		{
     			destinations.get(i).setSurlignee("destination");
     		}
-    	}
-    	else if(pieceCliquee == null)
-    	{
-    		this.m_caseSelectionnee = null;
+    		this.m_caseSelectionnee = caseCliquee;
     	}
     	else
     	{
-    		this.m_plateau.deplacer(this.m_caseSelectionnee.getPiece(), caseCliquee.getPositionX(), caseCliquee.getPositionY());
+    		if(m_caseSelectionnee.getPiece().destinations().contains(caseCliquee)) {
+    			this.m_plateau.deplacer(this.m_caseSelectionnee.getPiece(), caseCliquee.getPositionX(), caseCliquee.getPositionY());
+    			
+    		}
+    		else
+    		{
+    			ArrayList<Case> destinations = m_caseSelectionnee.getPiece().destinations();
+    			for(int i = 0; i < destinations.size(); i++)
+        		{
+        			destinations.get(i).setSurlignee("");
+        		}
+    		}
+    		caseCliquee.setSurlignee("");
+    		m_caseSelectionnee.setSurlignee("");
+    		this.m_caseSelectionnee = null;
     	}
     	
     	this.m_plateau.repaint();
