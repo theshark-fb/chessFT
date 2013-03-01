@@ -1,7 +1,4 @@
-import javax.swing.JButton;
-
-
-public class Case extends JButton {
+public class Case {
 	
 	private int m_positionX;
 	private int m_positionY;

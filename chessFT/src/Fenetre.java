@@ -1,9 +1,6 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.JFrame;
 
-public class Fenetre extends JFrame implements ActionListener {
+public class Fenetre extends JFrame {
 
 	public Fenetre(){
 		this.setTitle("ChessFT");
@@ -14,10 +11,6 @@ public class Fenetre extends JFrame implements ActionListener {
 		
 		this.setContentPane(new Plateau());
 		this.setVisible(true);
-	}
-	
-	public void actionPerformed(ActionEvent arg0) {
-		
 	}
 	
 	/**

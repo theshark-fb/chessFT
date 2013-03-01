@@ -8,12 +8,10 @@ public abstract class Piece {
 	protected String m_couleur;
 	protected String m_libelle;
 	
-	public Piece(){
-		
-	}
-	
-	public Piece(String p_couleur){
+	public Piece(String p_couleur, int p_positionX, int p_positionY){
 		this.m_couleur = p_couleur;
+		this.m_positionX = p_positionX;
+		this.m_positionY = p_positionY;
 	}
 	
 	public abstract String getType();

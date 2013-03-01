@@ -6,10 +6,8 @@ public class Tour extends Piece {
 	private boolean m_roque = true;
 
 	public Tour(String p_couleur, int p_positionX, int p_positionY) {
-		this.m_couleur = p_couleur;
+		super(p_couleur, p_positionX, p_positionY);
 		this.m_libelle = "Tour";
-		this.m_positionX = p_positionX;
-		this.m_positionY = p_positionY;
 	}
 	
 	public boolean getRoque(){
