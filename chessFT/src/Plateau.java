@@ -2,6 +2,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.IOException;
 
@@ -9,7 +10,7 @@ import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-public class Plateau extends JPanel {
+public class Plateau extends JPanel{
 	
 	private Historique m_mouvements;
 	private int m_tourDeJeu = 1;
@@ -86,13 +87,6 @@ public class Plateau extends JPanel {
 				}
 			}
 		}
-	}
-	
-	void mousePressed(MouseEvent mouseEvent) {
-        if ( SwingUtilities.isLeftMouseButton(mouseEvent) ) {
-        	int x = 1, y = 1;
-        	System.out.println("x: "+Integer.toString(x)+"y: "+Integer.toString(y));
-        }
 	}
 	
 	public static Case getCase(int p_positionX, int p_positionY){
