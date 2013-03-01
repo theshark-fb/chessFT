@@ -14,6 +14,10 @@ public class Roi extends Piece {
 		return this.m_roque;
 	}
 	
+	public void setRoque(){
+		this.m_roque = false;
+	}
+	
 	public ArrayList<Case> destinations(){
 		ArrayList<Case> cases = new ArrayList<Case>();
 		int pos_x = this.m_positionX;

@@ -109,6 +109,8 @@ public class Plateau extends JPanel{
 		
 		if(roque) {
 			Tour tour = (Tour) caseDestination.getPiece();
+			p_piece.setRoque();
+			tour.setRoque();
 		}
 		
 		p_piece.setPositionX(p_destinationX);

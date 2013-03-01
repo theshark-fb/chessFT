@@ -13,6 +13,10 @@ public class Tour extends Piece {
 	public boolean getRoque(){
 		return this.m_roque;
 	}
+
+	public void setRoque(){
+		this.m_roque = false;
+	}
 	
 	public ArrayList<Case> destinations(){
 		ArrayList<Case> cases = new ArrayList<Case>();
