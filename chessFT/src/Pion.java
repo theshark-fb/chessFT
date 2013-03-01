@@ -19,8 +19,24 @@ public class Pion extends Piece {
 		this.m_premierDeplacement = false;
 	}
 	
-	public void promotion(){ // Demande en quoi le pion doit �tre promu
+	public void promotion(String typePiece){
+		if(typePiece == "Reine") {
+			Reine nouvellePiece = new Reine(this.m_couleur, this.m_positionX, this.m_positionY);
+		}
+		else if(typePiece == "Fou")
+		{
+			Fou nouvellePiece = new Fou(this.m_couleur, this.m_positionX, this.m_positionY);
+		}
+		else if(typePiece == "Tour")
+		{
+			Tour nouvellePiece = new Tour(this.m_couleur, this.m_positionX, this.m_positionY);
+		}
+		else
+		{
+			Cavalier nouvellePiece = new Cavalier(this.m_couleur, this.m_positionX, this.m_positionY);
+		}
 		
+		Plateau.getCase(m_positionX, m_positionY).setPiece(nouvellePiece);
 	}
 	
 	public ArrayList<Case> destinations(){
