@@ -1,8 +1,9 @@
-import java.util.ArrayList;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
 
-public class Fenetre extends JFrame {
+public class Fenetre extends JFrame implements ActionListener {
 
 	public Fenetre(){
 		this.setTitle("ChessFT");
@@ -15,6 +16,9 @@ public class Fenetre extends JFrame {
 		this.setVisible(true);
 	}
 	
+	public void actionPerformed(ActionEvent arg0) {
+		
+	}
 	
 	/**
 	 * @param args

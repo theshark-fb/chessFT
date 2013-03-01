@@ -31,6 +31,12 @@ public class Roi extends Piece {
 		return cases;
 	}
 	
+	public String getType()
+	{
+		return "R";
+	}
+	
+	
 	/**
 	 * @param args
 	 */

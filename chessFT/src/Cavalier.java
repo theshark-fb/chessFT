@@ -57,6 +57,12 @@ public class Cavalier extends Piece {
 		return cases;
 	}
 	
+	public String getType()
+	{
+		return "C";
+	}
+	
+	
 	/**
 	 * @param args
 	 */

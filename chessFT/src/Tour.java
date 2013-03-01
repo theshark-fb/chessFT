@@ -79,6 +79,12 @@ public class Tour extends Piece {
 		return cases;
 	}
 	
+	public String getType()
+	{
+		return "T";
+	}
+	
+	
 	/**
 	 * @param args
 	 */

@@ -16,6 +16,8 @@ public abstract class Piece {
 		this.m_couleur = p_couleur;
 	}
 	
+	public abstract String getType();
+	
 	public int getPositionX(){
 		return this.m_positionX;
 	}

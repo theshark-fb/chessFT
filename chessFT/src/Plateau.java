@@ -92,7 +92,7 @@ public class Plateau extends JPanel{
 	public void deplacer(Piece p_piece, int p_destinationX, int p_destinationY)
 	{
 		int origineX = p_piece.getPositionX(), origineY = p_piece.getPositionY();
-		// Dï¿½but initialisation historique
+		// Début initialisation historique
 		String histo = m_mouvements.prepareMouvement(p_piece, p_destinationX, p_destinationY); 
 		// Fin initialisation historique
 		

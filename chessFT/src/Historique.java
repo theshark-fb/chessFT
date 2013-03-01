@@ -21,28 +21,7 @@ public class Historique {
 		
 		String caractereDepart =  Integer.toString('a'-1+origineX);
 		String caractereArrivee =  Integer.toString('a'-1+p_destinationX);
-		histo = caractereDepart+Integer.toString(origineY)+"-"+caractereArrivee+Integer.toString(p_destinationY);
-		
-		if(p_piece.getLibelle() == "Roi")
-		{
-			histo = "R"+histo;
-		}
-		else if(p_piece.getLibelle() == "Reine")
-		{
-			histo = "D"+histo;
-		}
-		else if(p_piece.getLibelle() == "Tour")
-		{
-			histo = "T"+histo;
-		}
-		else if(p_piece.getLibelle() == "Fou")
-		{
-			histo = "F"+histo;
-		}
-		else if(p_piece.getLibelle() == "Cavalier")
-		{
-			histo = "C"+histo;
-		}
+		histo = p_piece.getType()+caractereDepart+Integer.toString(origineY)+"-"+caractereArrivee+Integer.toString(p_destinationY);
 		
 		if(occupee) histo += "x";
 		return histo;

@@ -69,6 +69,12 @@ public class Fou extends Piece {
 		return cases;
 	}
 	
+	public String getType()
+	{
+		return "F";
+	}
+	
+	
 	/**
 	 * @param args
 	 */

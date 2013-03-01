@@ -55,6 +55,12 @@ public class Pion extends Piece {
 		}
 		return cases;
 	}
+	
+	public String getType()
+	{
+		return "";
+	}
+	
 
 	/**
 	 * @param args

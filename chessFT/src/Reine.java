@@ -125,6 +125,11 @@ public class Reine extends Piece {
 		return cases;
 	}
 	
+	public String getType()
+	{
+		return "D";
+	}
+	
 	/**
 	 * @param args
 	 */
